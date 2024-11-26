@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vishal Bharti School</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  header {
+    background-color: #6a1b9a;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  header .logo h1 {
+    font-size: 2rem;
+  }
+  
+  header .navbar ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+  }
+  
+  header .navbar ul li {
+    margin-left: 20px;
+  }
+  
+  header .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-image: url('https://via.placeholder.com/1500x600');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .hero h2 {
+    font-size: 3rem;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  
+  .hero .cta-btn {
+    background-color: #ff5722;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  /* About Section */
+  .about, .features, .testimonials {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .about p, .features p {
+    font-size: 1.1rem;
+    margin-top: 20px;
+  }
+  
+  /* Features Section */
+  .features .feature-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .features .card {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin-bottom: 30px;
+  }
+  
+  .features .card h3 {
+    font-size: 1.5rem;
+    color: #6a1b9a;
+  }
+  
+  /* Testimonials Section */
+  .testimonials .testimonial-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .testimonials .testimonial-card {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    margin-bottom: 30px;
+  }
+  
+  footer {
+    background-color: #6a1b9a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive Design for mobile & tablet */
+  @media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+  
+    .hero .cta-btn {
+        padding: 8px 15px;
+    }
+  
+    .header .logo h1 {
+        font-size: 1.5rem;
+    }
+  
+    .header .navbar ul {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+  
+    .header .navbar ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+  
+    .features .feature-cards {
+        justify-content: center;
+    }
+  
+    .features .card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+  
+    .testimonials .testimonial-cards {
+        justify-content: center;
+    }
+  
+    .testimonials .testimonial-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero {
+        height: 400px;
+    }
+  
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+  
+    .hero p {
+        font-size: 0.9rem;
+    }
+  
+    .cta-btn {
+        padding: 6px 12px;
+        font-size: 1rem;
+    }
+  
+    .features .card {
+        width: 90%;
+    }
+  
+    .testimonials .testimonial-card {
+        width: 90%;
+    }
+  }
+  
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <h1>Vishal Bharti School</h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#admission">Admission</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Vishal Bharti School</h2>
+            <p>Empowering young minds to achieve greatness</p>
+            <a href="#admission" class="cta-btn">Apply Now</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Vishal Bharti Senior Secondary School offers a unique approach to learning. We focus on holistic development, balancing academics with extracurricular activities to nurture well-rounded individuals.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>Our Key Highlights</h2>
+            <div class="feature-cards">
+                <div class="card">
+                    <h3>Academics</h3>
+                    <p>Comprehensive curriculum and expert faculty</p>
+                </div>
+                <div class="card">
+                    <h3>Sports</h3>
+                    <p>Promoting fitness and teamwork through various sports</p>
+                </div>
+                <div class="card">
+                    <h3>Extracurriculars</h3>
+                    <p>Encouraging creativity and leadership skills through various programs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Parents Say</h2>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <p>"An excellent school that focuses on all-round development of children!"</p>
+                    <span>- Parent</span>
+                </div>
+                <div class="testimonial-card">
+                    <p>"The faculty is very supportive and helps students achieve their best potential."</p>
+                    <span>- Parent</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <div class="container">
+            <p>&copy; 2024 Vishal Bharti School. All Rights Reserved.</p>
+            <p>Contact: 9876543210 | Email: contact@vishalbhartischool.in</p>
+        </div>
+    </footer>
+</body>
+</html>
